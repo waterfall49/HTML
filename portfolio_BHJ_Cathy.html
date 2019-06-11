@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!--
+    Final Project
+    Author: Hyejung Bae(Cathy)
+	Filename : Portfolio_BHJ.html
+	Refer to : youtube about bootstarp https://www.youtube.com/watch?v=9cKsq14Kfsw 
+   -->
+   	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CATHY BAE | HYEJUNG BAE </title>
+	<link rel="icon" href="img/myIcon.JPG" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+
+<!--------------------------------------- Home section ------------------------------------->
+<section class="main">
+	<div id="icontest" data-toggle="collapse" data-target="#icon1"><br><br><br><br> hi :)
+		<div id="icon1" class="collapse">
+			<img src="des/icon.JPG">
+		</div>  
+	</div>    
+	<div id="text">
+		Welcome to Cathy Bae World <br>  
+	</div>
+
+	<script type="text/javascript">
+		var i=0,text;
+		text= "     Future data analyst,     like programming and SQL.     !(NERD)"
+
+		function typing() {
+			if(i<text.length){
+				document.getElementById("text").innerHTML += text.charAt(i);
+				i++;
+				setTimeout(typing,100);
+			}
+		}
+		typing();
+	</script>
+	<div id="icontest" data-toggle="collapse" data-target="#des"> hi :)
+		<div id="des" class="collapse">
+			<img src="des/typing.JPG">
+		</div>  
+	</div> 
+
+</section>
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<div class="container-fluid">
+	<a class="navbar-brand" href="#"><img src="img/mylogo.png"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" 
+	data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link hide" data-toggle="collapse" data-target="#des1">Hi</a>
+					<div id="des1" class="collapse">
+						<img src="des/nav.JPG">
+					</div>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#aboutMe">About Me</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#myWork">My Work</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#mySkill">My Skill</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#myGoal">Goal</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#resume">Resume</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contactMe">Contact me</a>
+			</li>
+		</ul>
+	</div>
+
+    <script type="text/javascript">
+		var nav = document.getElementsByClassName("navbar");
+
+		window.onscroll = function sticky() {
+			if(window.pageYOffset >= nav[0].offsetTop){
+				nav[0].classList.add("nav");
+			} else {
+				nav[0].classList.remove("nav");
+			}
+		}
+	</script>
+
+
+</div>	
+</nav>
+<!--------------------------------------- AboutMe section ------------------------------------->
+<!--- Image Slider -->
+<section id="aboutMe"></section>
+<div id="slides" class="carousel slide" data-ride="carousel">
+<ul class="carousel-indicators">
+	<li data-target="#slides" data-slide-to="0" class="active"></li>
+	<li data-target="#slides" data-slide-to="1"></li>
+	<li data-target="#slides" data-slide-to="2"></li>
+	<li data-target="#slides" data-slide-to="3"></li>
+	<li data-target="#slides" data-slide-to="4"></li>
+</ul>
+<div class="carousel-inner">
+	<div class="carousel-item active">
+		<img src="img/2018class.JPG">
+		<div class="carousel-caption">
+			<h1 class="display-2">Adieu 2018</h1>
+			<h3>Awesome Class</h3>
+		</div>
+	</div>
+	<div class="carousel-item">
+		<img src="img/capebreton.JPG">
+		<div class="carousel-caption">
+			<h1 class="display-2">WELCOME</h1>
+			<h3>My Website</h3>
+		</div>
+	</div>
+	<div class="carousel-item">
+		<img src="img/Dean.jpg">
+		<div class="carousel-caption">
+			<h1 class="display-2">Dean's Costume</h1>
+			<h3>But he didn't noticed.. <br>until we let him know..</h3>
+		</div>
+	</div>
+
+	<div class="carousel-item">
+		<img src="img/challenge.JPG">
+		<div class="carousel-caption">
+			<h1 class="display-2">Challenge NS 2018</h1>
+			<h3>Asians and White girl TEAM 18</h3>
+		</div>
+	</div>
+
+	<div class="carousel-item">
+		<img src="img/2018Dinner.JPG">
+		<div class="carousel-caption">
+			<h1 class="display-2">WOMEN in IT</h1>
+			<h3>We are amazing</h3>
+		</div>
+	</div>
+
+</div>
+</div>
+
+<!--- Jumbotron -->
+<div class="container-fluid">
+<div class="row jumbotron">
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+		<p class="lead">2020 Data Analytics</p>
+	</div>
+	<!-- <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+		<a href="#"><button type="button" class="btn-outline-secondary">
+			Web hosting</button></a>
+	</div> -->
+</div>
+</div>
+
+
+<!--------------------------------------- my Work section ------------------------------------->
+<section id="myWork"></section>
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">My work</h1>
+		</div>
+		<hr>
+	</div>
+</div>
+	
+<!--- Cards -->
+<div class="container-fluid padding">
+<div class="row padding">
+	<div class="col-md-4">
+		<div class="card">
+			<img class="card-img-top" src="img/programming.jpg">
+			<div class="card-body">
+				<h4 class="card-title">Programming</h4>
+				<p class="card-text">JAVA and Python</p>
+				<a href="img/work_battleship.jpg" target="_blank" class="btn btn-outline-secondary">Python Detail</a>
+				<a href="img/work_javagame.jpg" target="_blank" class="btn btn-outline-secondary">Java Detail</a>
+			</div>
+		</div>
+	</div>
+
+<div class="col-md-4"> 	
+	<div class="card">
+		<img class="card-img-top" src="img/database.jpg">
+		<div class="card-body">
+			<h4 class="card-title">SQL</h4>
+			<p class="card-text">Transactional Database</p>
+			<a href="img/work_sql.jpg" target="_blank" class="btn btn-outline-secondary">See Detail</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="col-md-4">
+	<div class="card">
+		<img class="card-img-top" src="img/r.JPG">
+		<div class="card-body">
+			<h4 class="card-title">R</h4>
+			<p class="card-text">Statistical Learning</p>
+			<a href="img/work_r.jpg" target="_blank" class="btn btn-outline-secondary">See Detail</a>
+		</div>
+	</div>
+</div>	
+
+</div>
+</div>
+
+<!-------------------------------- Current Skill section ----------------------------------->
+<section id="mySkill"></section>
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+	<div class="col-12">
+		<h1 class="display-4"> My Current Skill </h1>
+	</div>
+	<hr> 
+	<div class="col-12">
+		<p class="lead2">This is my current skill<br>
+		I am still developing ability<br>
+		<div class="emp">I am still hungry :)</div></p>
+	</div>
+</div>
+</div>
+
+<!--- Graph Section -->
+<!-- reference : https://www.youtube.com/watch?v=bClP73LpeOY -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+
+<div class="box">
+	<div class="skill">
+		<div class="graph" style="height:60%">
+			<div class="percent">60%</div>
+		</div>
+		<div class="name">HTML/CSS</div>
+	</div>
+	<div class="skill">
+		<div class="graph" style="height:80%">
+			<div class="percent">80%</div>
+		</div>
+		<div class="name">JAVA</div>
+	</div>
+	<div class="skill">
+		<div class="graph" style="height:70%">
+			<div class="percent">70%</div>
+		</div>
+		<div class="name">PYTHON</div>
+	</div>
+	<div class="skill">
+		<div class="graph" style="height:90%">
+			<div class="percent">90%</div>
+		</div>
+		<div class="name">DATABASE</div>
+	</div>
+	<div class="skill">
+		<div class="graph" style="height:70%">
+			<div class="percent">70%</div>
+		</div>
+		<div class="name">R STAT</div>
+	</div>
+	<div class="skill">
+		<div class="graph" style="height:80%">
+			<div class="percent">80%</div>
+		</div>
+		<div class="name">LINUX</div>
+	</div>
+</div>
+</div>
+
+<hr class="my-4">
+</div>
+
+<!-------------------------------------- My Goal section ----------------------------------->
+<!--- Fixed background -->
+<section id="myGoal"></section>
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+<div class="row padding">
+
+	<div class="col-md-3 col-lg-5" id="goal">
+		<h2>Short-Term Goal(~2020)</h2>
+		<li> Do work-term or co-op job </li>
+		<li> Achive at least 5 certificate </li>
+		<li> Join networt event per month </li>
+		<li> Apply 1 or more competition </li>
+		<li> Be positive, Be passionate </li>
+		<br>
+	</div>
+	<div class="col-md-3 col-lg-5" id="goal">
+		<h2>Long-Term Goal(~2025)</h2>
+		<li> Be qualified as a data analyst </li>
+		<li> Get a data analyst job </li>
+		<li> Be fluent in English </li>
+		<li> Be awarded in any of competition </li>
+		<li> Keep studying, keep focusing </li>
+		<br>
+	</div>
+</div>
+</div>
+
+
+
+		</div>
+	</div>
+</figure>
+
+
+<!---GIF Section -->
+<button class="fun" data-toggle="collapse" data-target="#emoji">
+	 Click for FUN :D
+</button>
+<div id="emoji" class="collapse">
+<div class="container-fluid padding">
+<div class="row text-center">
+	<div class="col-sm-6 col-md-3">
+		<img class="gif" src="img/capebreton.gif">
+	</div>
+	<div class="col-sm-6 col-md-3">
+		<img class="gif" src="img/vancouver.gif">
+	</div>		
+	<div class="col-sm-6 col-md-3">
+		<img class="gif" src="img/boracai.gif">
+	</div>
+	<div class="col-sm-6 col-md-3">
+		<img class="gif" src="img/haeundae.gif">
+	</div>		
+</div>
+</div>
+</div>
+
+<div id="test2" data-toggle="collapse" data-target="#icon3"> hi :)
+	<div id="icon3" class="collapse">
+		<img src="des/toggle.JPG">
+	</div>
+</div>
+
+
+<!-------------------------------------- Resume section ----------------------------------->
+<!--- Two Column Section -->
+<section id="resume"></section>
+<div class="container-fluid padding">
+<div class="row padding">
+	<div class="col-md-12 col-lg-5">
+		<h2>Now you must be <br> interested in..<div class="emp"> ME </div></h2>
+		<h4>It is OK. Don't be shy. COME ON!</h4>
+		<br>
+		<a href="img/resume.pdf" target="_blank" class="btn btn-primary">Click ME!</a>
+	</div>
+	<div class="col-lg-7">
+		<img src="img/wantme.gif" class="img-fluid">
+	</div>
+</div>
+</div>
+
+<hr class="my-4">
+
+<!--------------------------------------- Contact me section ------------------------------------->
+<!--- Connect -->
+<section id="contactMe"></section>
+<div class="container-fluid padding">
+<div class="row text-center padding">
+<div class="col-12">
+	<div id="contactme">
+		<div class="col-12 social padding">
+			<h2>I'm HERE</h2>
+			<p>Catch me, if you can. &ensp;OF COURSE, YOU CAN!</p>
+			<br>
+			<br>
+			<div class="middle">
+				<a class="Sbtn" href="http://www.linkedin.com/in/hyejung-bae-cathy-bae" target="_blank">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+				<a class="Sbtn" href="mailto:hj49.bae@gmail.com" target="_blank">
+					<i class="fab fa-google-plus-g"></i>
+				</a>
+				<a class="Sbtn" href="https://github.com/waterfall49" target="_blank">
+					<i class="fab fa-github"></i>
+				</a>
+			</div>
+			<div id="test1" data-toggle="collapse" data-target="#des2"> hi :)
+				<div id="des2" class="collapse">
+					<img src="des/font.png">
+				</div>  
+			</div>  
+		</div>
+		
+	</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+
